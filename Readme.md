@@ -1,4 +1,4 @@
-**Transferring Inter-modality Information for Thigh CT Slice Muscle group Segmentation with Self Training** 
+**Single Slice Thigh CT Muscle Group Segmentation with Domain Adaptation and Self-Training**
 ---
 #### Copyright
 The contents covered by this repository, including code and pretrained models in the docker container, are free for noncommercial usage (CC BY-NC 4.0). Please check the LICENSE.md file for more details of the copyright information.
@@ -28,12 +28,14 @@ singularity run --contain --nv --bind ${INPUTS}:/INPUTS --bind ${OUTPUTS}:/OUTPU
 ```
 ---
 ##### The output structure
+```
 ├── demon
 │   ├── demon_muscle_group.nii.gz
 │   ├── demon.nii.gz
 │   ├── demon.pdf
 │   └── demon.png
 └── test_opt.txt
+```
 
 **demon_muscle_group.nii.gz**: the segmentation map from the model
 **demon.nii.gz**: the original input file

@@ -5,11 +5,13 @@ The contents covered by this repository, including code and pretrained models in
 
 ---
 #### Citation
+
+Qi Yang, Xin Yu, Ho Hin Lee, Leon Y. Cai,  Kaiwen Xu, Shunxing Bao, Yuankai Huo, Ann Zenobia Moore, Sokratis Makrogiannis, Luigi Ferrucci, Bennett A. Landman, “Single Slice Thigh CT Muscle Group Segmentation with Domain Adaptation and Self-Training", IEEE Transactions on Biomedical Engineering (prepare to submit)
+
 ---
 #### Quick start
 
-##### Get the singularity image
-- Please download the singularity from this [link](https://drive.google.com/file/d/1tPkFerhatzN9CwJk9nSU8dMh8_7XeR0c/view?usp=sharing)
+- Please download the singularity from this [link](https://drive.google.com/file/d/1xtJf6VpSDyrwb25DSdbo331_Mh6ZouPM/view?usp=share_link)
 - Prepare the data used for the singularity.
   - The data should have image dimensions 256 x 256 pixels
   - The data only include left/right mid-thigh image. Please check the paper for reference.
@@ -25,6 +27,21 @@ mkdir ${INPUTS} ${OUTPUTS}
 singularity run --contain --nv --bind ${INPUTS}:/INPUTS --bind ${OUTPUTS}:/OUTPUTS $singularity_file
 ```
 ---
+##### The output structure
+├── demon
+│   ├── demon_muscle_group.nii.gz
+│   ├── demon.nii.gz
+│   ├── demon.pdf
+│   └── demon.png
+└── test_opt.txt
+
+**demon_muscle_group.nii.gz**: the segmentation map from the model
+**demon.nii.gz**: the original input file
+**demon.png**: the visualization used in demon.pdf
+**test_opt.txt**: the test option used in the inference stage
+**demon.pdf**: the pdf report includes the visualization of final results and stats calculated based on segmentation map. Below is the screenshot of the pdf ![image](./material/demon.png)
+
+
 ##### Disclaimer
 The code and data of this repository are provided to promote reproducible research. They are not intended for clinical care or commercial use.
 

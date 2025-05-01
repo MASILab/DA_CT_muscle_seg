@@ -6,12 +6,12 @@ The contents covered by this repository, including code and pretrained models in
 ---
 #### Citation
 
-Qi Yang, Xin Yu, Ho Hin Lee, Leon Y. Cai,  Kaiwen Xu, Shunxing Bao, Yuankai Huo, Ann Zenobia Moore, Sokratis Makrogiannis, Luigi Ferrucci, Bennett A. Landman, “Single Slice Thigh CT Muscle Group Segmentation with Domain Adaptation and Self-Training", IEEE Transactions on Biomedical Engineering (prepare to submit)
+Qi Yang, Xin Yu, Ho Hin Lee, Leon Y. Cai, Kaiwen Xu, Shunxing Bao, Yuankai Huo, Ann Zenobia Moore, Sokratis Makrogiannis, Luigi Ferrucci, Bennett A. Landman, “Single Slice Thigh CT Muscle Group Segmentation with Domain Adaptation and Self-Training", Journal of Medical Imaging 10.4 (2023): 044001-044001.
 
 ---
 #### Quick start
 
-- Please download the singularity from this [link](https://drive.google.com/file/d/1xtJf6VpSDyrwb25DSdbo331_Mh6ZouPM/view?usp=share_link)
+- Please download the singularity from this [link](https://zenodo.org/records/15319954)
 - Prepare the data used for the singularity.
   - The data should have image dimensions 256 x 256 pixels
   - The data only include left/right mid-thigh image. Please check the paper for reference.
